@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cidade</title>
+</head>
+
+<body>
+    <header>
+        <h1>A minha cidade</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="local.html">Localização</a>
+            <a href="multimedia.html">Multimédia</a>
+            <a href="info.html">Informação</a>
+            <a href="quizz.html">Quizz</a>
+            <a href="viagem.html">Viagem</a>
+        </nav>
+        <img src="images/saopedro.jpg" alt="A minha cidade">
+    </header>
+    <main>
+   <form method="get" action="https://postman-echo.com/get" autocomplete="on"> 
+        <section id="dadospessoais">
+            <h2>Quizz</h2>
+            
+            <fieldset>
+                
+                <legend>Dados pessoais</legend>
+                
+                <p> 
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" placeholder="Inserir nome" autofocus required>
+                </p>
+                
+                <p> 
+                    <label for="apelido">Apelido:</label>
+                    <input type="text" name="apelido" placeholder="Inserir apelido" required>
+                </p>
+                
+                <p> 
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="Inserir email" autocomplete="off" required>
+                </p>
+
+                </fieldset>
+           
+        </section>
+        <section id ="quizz">
+            <fieldset>
+                <legend>Quiz</legend>
+                    <label for ="pergunta1"><b>1. Em que concelho se localiza São Pedro de Penaferrim?</b></label>
+                    <p><input type="radio" name="resposta1" value="Açores">
+                    <label for = "resposta1"> Açores</label></p>
+                    <p><input type="radio" name="resposta1" value="Vila Nova de Gaia">
+                    <label for = "resposta1"> Vila Nova de Gaia</label></p>
+                    <p><input type="radio" name="resposta1" value="Cascais">
+                    <label for = "resposta1"> Cascais</label></p>
+                    <p><input type="radio" name="resposta1" value="Sintra">
+                    <label for = "resposta1"> Sintra</label></p>
+
+                    <label for ="pergunta2"><b>2. Qual destas celebridades portuguesas tem casa em São Pedro?</b></label>
+                    <p><input type="radio" name="resposta2" value="Joaquim de Almeida">
+                    <label for = "resposta2"> Joaquim de Almeida</label></p>
+                    <p><input type="radio" name="resposta2" value="Vasco Palmeirim">
+                    <label for = "resposta2"> Vasco Palmeirim</label></p>
+                    <p><input type="radio" name="resposta2" value="Luis Esparteiro">
+                    <label for = "resposta2"> Luis Esparteiro</label></p>
+                    <p><input type="radio" name="resposta2" value="Júlio Isidro">
+                    <label for = "resposta2"> Júlio Isidro </label></p>
+
+                    <label for ="pergunta3"><b>3. Qual foi o rei que mandou construir o Palácio da Pena?</b></label>
+                    <p><input type="radio" name="resposta3" value="D. Carlos I">
+                    <label for = "resposta3"> D. Carlos I</label></p>
+                    <p><input type="radio" name="resposta3" value="D. Fernando II">
+                    <label for = "resposta3"> D. Fernando II</label></p>
+                    <p><input type="radio" name="resposta3" value="D. Dinis">
+                    <label for = "resposta3"> D. Dinis</label></p>
+                    <p><input type="radio" name="resposta3" value="Luis Figo" novalidate>
+                    <label for = "resposta3"> Luis Figo</label></p>
+                    
+                    
+                    
+                
+
+
+
+            </fieldset>
+
+        </section>
+        <input type="submit">
+        </form>
+    </main>
+    <footer>
+    <p>DIW 2024</p>
+    </footer>
+
+    </body>
+</html>
