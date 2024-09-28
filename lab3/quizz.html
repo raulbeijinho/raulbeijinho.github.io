@@ -29,12 +29,12 @@
                 
                 <p> 
                     <label for="nome">Nome:</label>
-                    <input type="text" name="nome" placeholder="Inserir nome" autofocus required>
+                    <input type="text" name="nome" placeholder="Inserir nome" autofocus autocomplete="off" required maxlength="15">
                 </p>
                 
                 <p> 
                     <label for="apelido">Apelido:</label>
-                    <input type="text" name="apelido" placeholder="Inserir apelido" required>
+                    <input type="text" name="apelido" placeholder="Inserir apelido" autocomplete="off" required maxlength="15">
                 </p>
                 
                 <p> 
@@ -49,47 +49,64 @@
             <fieldset>
                 <legend>Quiz</legend>
                     <label for ="pergunta1"><b>1. Em que concelho se localiza São Pedro de Penaferrim?</b></label>
+                    
                     <p><input type="radio" name="resposta1" value="Açores">
                     <label for = "resposta1"> Açores</label></p>
+                    
                     <p><input type="radio" name="resposta1" value="Vila Nova de Gaia">
                     <label for = "resposta1"> Vila Nova de Gaia</label></p>
+                    
                     <p><input type="radio" name="resposta1" value="Cascais">
                     <label for = "resposta1"> Cascais</label></p>
+                    
                     <p><input type="radio" name="resposta1" value="Sintra">
                     <label for = "resposta1"> Sintra</label></p>
 
                     <label for ="pergunta2"><b>2. Qual destas celebridades portuguesas tem casa em São Pedro?</b></label>
+                    
                     <p><input type="radio" name="resposta2" value="Joaquim de Almeida">
                     <label for = "resposta2"> Joaquim de Almeida</label></p>
+                    
                     <p><input type="radio" name="resposta2" value="Vasco Palmeirim">
                     <label for = "resposta2"> Vasco Palmeirim</label></p>
+                    
                     <p><input type="radio" name="resposta2" value="Luis Esparteiro">
                     <label for = "resposta2"> Luis Esparteiro</label></p>
+                    
                     <p><input type="radio" name="resposta2" value="Júlio Isidro">
                     <label for = "resposta2"> Júlio Isidro </label></p>
+                    <p><label for ="dicapergunta2" title="Não é o Luis Esparteiro"><b><i>Dica! (passa o cursor em cima)</i></b></label></p>
 
                     <label for ="pergunta3"><b>3. Qual foi o rei que mandou construir o Palácio da Pena?</b></label>
+                    
                     <p><input type="radio" name="resposta3" value="D. Carlos I">
                     <label for = "resposta3"> D. Carlos I</label></p>
+                    
                     <p><input type="radio" name="resposta3" value="D. Fernando II">
                     <label for = "resposta3"> D. Fernando II</label></p>
+                    
                     <p><input type="radio" name="resposta3" value="D. Dinis">
                     <label for = "resposta3"> D. Dinis</label></p>
+                    
                     <p><input type="radio" name="resposta3" value="D. Sancho I">
-                    <label for = "resposta3"> Luis Figo</label></p>
+                    <label for = "resposta3"> D. Sancho I</label></p>
 
-                    
-                    
-                    
-                    
-                
+                    <label for ="pergunta4"><b>4. Qual a primeira cor que te vem a cabeça quando pensas em Sintra?</b></label>
+                    <p><input type="color" id="corsintra" name="corsintra" value="#000000"></p>
 
+                    <label for="pergunta5"><b>5. Quais as chances de quereres visitar São Pedro?</b></label>
+                        <select id="chances" name="chances" size="1">
+                            <option value="bastantes">Bastantes</option>
+                            <option value="algumas">Algumas, mas só para ir ao Palacio</option>
+                            <option value="poucas">Poucas, preferia passar uma tarde em Moscavide</option>
+                            <option value="muitas">Muitas, até já arranjei boleia de um amigo hippie que conduz tuktuks</option>
+                        </select>
 
-
-            </fieldset>
+                </fieldset>
 
         </section>
         <input type="submit">
+        <input type="reset">
         </form>
     </main>
     <footer>
