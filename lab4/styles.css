@@ -9,7 +9,7 @@ html, body {
 
 
 h1{
-    background-color: rgb(21, 103, 21);
+    background-color: #1db954;
     color: white;
     padding: 30px;
     text-align: center;
@@ -22,45 +22,105 @@ body {
 }
 
 nav{
-    background-color: #302c2c;
-    color: white;
+    background-color: white;
+    color:#383838;
     padding: 25px;
     text-align: center;
     margin-bottom: 15px;
 }
 
-main{
-    flex: 1;
-}
-
 footer{
-    background-color: #383838;
-    color: white;
+    background-color: #1db954;
     padding: 10px;
+    color:white;
     text-align: center;
 
  }
 
  #home {
-    
-    
     text-align: left;
-    padding: 10px;
+    padding: 25px;
     background: rgb(255, 255, 255);
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
+}
 
+#multimedia {
     
- }
+    padding: 25px;
+    background: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
- 
+#cabeçalhomulti{
+    text-align:left;
+}
+
+#fotografias{
+    padding:10px;
+    padding-left:0px;
+}
+
+.fotosmulti {
+    text-align:center;
+   
+}
+
+.fotosmulti img{
+    margin: 0 100px; /* Espaçamento horizontal entre as fotos */
+    width: 170px; /* Ajuste conforme necessário */
+    height: auto;
+    padding: 5px;
+    border-radius: 5%;
+}
+
+.fotosmulti a {
+    height: auto;
+   padding: 10px;
+    
+}
+
+.fotosmulti a:hover {
+    background-color: white;
+}
+
+h3{
+    color:#1db954;
+    border-bottom: 2px solid #1db954; 
+    padding-bottom: 5px; 
+    margin-bottom: 15px; 
+}
+
+#videosintra{
+    text-align: center;
+}
+
+#titulopoema{
+    color: #1db954;
+}
 
 
+#fotoindex{
+        height: 350px;
+        background-image: url('images/imagem\ banner.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+
+a:link {color: #383838; text-decoration: none;}
+a:visited{color: #383838; text-decoration: none;}
+a:hover{
+    background-color:#1db954; 
+    color: white;
+    text-decoration: none;
+    padding: 5px; 
+    border-radius: 5px;
+}
 
 
-
-a:link {color: white; text-decoration: none;}
-a:visited{color: white; text-decoration: none;}
-a:hover{color: beige; text-decoration: none;}
