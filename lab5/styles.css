@@ -6,6 +6,8 @@ label {
     font-size: small;
 }
 
+
+
 input {
     font-size: medium;
 }
@@ -26,6 +28,9 @@ h1{
     padding: 30px;
     text-align: center;
     margin: 0px;
+    text-transform: uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+    
 }
 
 body {
@@ -140,6 +145,10 @@ div{
     margin-left: 10px;
     margin-right: 10px;
     
+}
+
+li{
+    font-size: 2em;
 }
 
 li:nth-child(2n+1){
