@@ -99,6 +99,7 @@ footer{
 .fotosmulti a {
     height: auto;
    padding: 10px;
+   cursor: zoom-in;
     
 }
 
