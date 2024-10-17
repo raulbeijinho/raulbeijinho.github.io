@@ -1,0 +1,157 @@
+* {
+    margin:0;  
+    padding:0;  
+    box-sizing: border-box; /* medidas sao tomadas da borda */
+}
+
+header{
+    position:sticky;
+    display:flex;
+    justify-content: space-between;  
+    align-items: center;
+    background: lightskyblue;
+    
+    a:last-child{
+        background-color: white;
+    }
+    
+}
+
+header nav {
+    display:flex;
+    justify-contents: flex-end;  
+}
+
+header h1 {
+    font-size: 2em;  
+    padding: 1em;
+    color: white;
+  }
+
+  nav{
+
+a:link {
+    text-decoration: none;        
+}
+
+a:visited{   
+    text-decoration: none;
+    color:brown;
+}
+
+a:hover{
+    background-color:beige; 
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:active{
+    color:red;
+}
+
+}
+nav a {
+    
+    a:link {
+        text-decoration: none;        
+    }
+
+    a:visited{   
+        text-decoration: none;
+        color:brown;
+    }
+
+    a:hover{
+        background-color:beige; 
+        color: black;
+        text-decoration: none;
+        padding: 5px; 
+        border-radius: 5px;
+
+    }
+
+    a:active{
+        color:red;
+    }
+
+    padding:20px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(29, 29, 29);
+}
+
+article#poema div {
+    background-color: lightgrey;
+    justify-content: center;
+    align-items:center;
+    display:flex;
+    height: 100vh;
+    width: 100vw; 
+}
+
+article#poema {
+    height: 50vh;
+    width: 100vw; 
+}
+
+article#paisagem div {
+    position:relative;
+    img {
+        width: 100vw;
+        height: 100%;
+    }
+    p{
+        
+        a{
+            color: white;
+            text-decoration: none;
+            background-color: darkgreen;
+        }
+        
+        position:absolute;
+        bottom:0px; right:20px;
+        
+    }
+}
+
+article#cidades{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left:25vw;
+    padding-right: 25vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    background: whitesmoke;
+    
+}
+
+article#cidades section{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5px;
+    
+}
+article#cidades img{
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+    
+}
+article#cidades div{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+    background-color: white;
+    
+    
+}
+
+
+
+
