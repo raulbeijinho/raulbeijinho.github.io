@@ -1,105 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <link rel ="stylesheet" href="styles.css">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale 1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>São Pedro de Penaferrim</title>
 </head>
 
 <body>
     <header>
         <h1>São Pedro de Penaferrim</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="local.html">Localização</a>
-            <a href="multimedia.html">Multimédia</a>
-            <a href="info.html">Informação</a>
-            <a href="quizz.html">Quizz</a>
-            <a href="viagem.html">Viagem</a>
-            <a href="pontosinteresse.html">Pontos de Interesse</a>
-            <a href="capitais.html">Capitais</a>
-            </nav>
-        <section id ="fotoindex">
-        </section>
     </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="local.html">Localização</a>
+        <a href="multimedia.html">Multimédia</a>
+        <a href="info.html">Informação</a>
+        <a href="quizz.html">Quizz</a>
+        <a href="viagem.html">Viagem</a>
+        <a href="pontosinteresse.html">Pontos de Interesse</a>
+        <a href="capitais.html">Capitais</a>
+    </nav>
+    <aside>
+        <section id="fotoindex"></section>
+    </aside>
     <main>
         <section id="home">
             <h2>Viagem</h2>
-            
+
             <form method="get" action="https://postman-echo.com/get" autocomplete="on">
-            
+
                 <fieldset>
 
-                <legend>Dados e preferências pessoais</legend>
+                    <legend>Dados e preferências pessoais</legend>
 
-                <p> 
-                    <label for="nome">Nome:</label>
-                    <input type="text" name="nome" placeholder="Inserir nome" autofocus required maxlength="15">
-                </p>
-                
-                <p> 
-                    <label for="apelido">Apelido:</label>
-                    <input type="text" name="apelido" placeholder="Inserir apelido" required maxlength="15">
-                </p>
-                
-                <p> 
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" placeholder="Inserir email" autocomplete="off" required>
-                </p>
-
-                <p>
-                    <label for ="datapartida">Data de partida:</label>
-                    <input type="date" name="datapartida" min="2024-09-28" required>
-                </p>
-
-                <p>
-                    <label for="dataregresso">Data de regresso:</label>
-                    <input type="date" name="dataregresso" min="2024-09-29" required>
-                </p>
-                <p>
-                    <label for="passageiros">Número de passageiros:</label>
-                    <input type="number" name="passageiros" min="1" max="5" required>
-                </p>
-                
-                <p>
-                    <label for="meiodetransporte">Meio de transporte favorito:</label>
-                    <select id="transportes" name="transportes" size="1">
-                        <option value="carro">Carro</option>
-                        <option value="autocarro">Autocarro</option>
-                        <option value="comboio">Comboio</option>
-                        <option value="aviao">Avião</option>
-                    </select>
-                </p>
-
-                <p>
-                    <label for="servico">Qual o serviço que deseja na sua viagem:</label>
-                    <select id="serviço" name="transportes" size="1" required>
-                        <option value="basico">Básico</option>
-                        <option value="premium">Premium</option>
-                        </select>
-                </p>
-                
-                <p>
-                    <label for="especiais">Pedidos especiais:</label>
-                    <p><textarea name="pedidosespeciais" rows="10" cols="30" placeholder="Escreva aqui quaisquer pedidos especiais"></textarea>
+                    <p>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" placeholder="Inserir nome" autofocus required maxlength="15">
                     </p>
-                </p>
 
-                <p>
-                    <label for="preço">Qual o valor que espera gastar por pessoa e por dia na sua viagem?</label>
-                    <input type="number" name="preço" min="10" placeholder="€">
-                </p>
+                    <p>
+                        <label for="apelido">Apelido:</label>
+                        <input type="text" name="apelido" placeholder="Inserir apelido" required maxlength="15">
+                    </p>
 
-            </fieldset>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="Inserir email" autocomplete="off" required>
+                    </p>
 
-            
-            <p><input type="submit"></p>
+                    <p>
+                        <label for="datapartida">Data de partida:</label>
+                        <input type="date" name="datapartida" min="2024-09-28" required>
+                    </p>
+
+                    <p>
+                        <label for="dataregresso">Data de regresso:</label>
+                        <input type="date" name="dataregresso" min="2024-09-29" required>
+                    </p>
+                    <p>
+                        <label for="passageiros">Número de passageiros:</label>
+                        <input type="number" name="passageiros" min="1" max="5" required>
+                    </p>
+
+                    <p>
+                        <label for="meiodetransporte">Meio de transporte favorito:</label>
+                        <select id="transportes" name="transportes" size="1">
+                            <option value="carro">Carro</option>
+                            <option value="autocarro">Autocarro</option>
+                            <option value="comboio">Comboio</option>
+                            <option value="aviao">Avião</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="servico">Qual o serviço que deseja na sua viagem:</label>
+                        <select id="serviço" name="transportes" size="1" required>
+                            <option value="basico">Básico</option>
+                            <option value="premium">Premium</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="especiais">Pedidos especiais:</label>
+                    <p><textarea name="pedidosespeciais" rows="10" cols="30"
+                            placeholder="Escreva aqui quaisquer pedidos especiais"></textarea>
+                    </p>
+                    </p>
+
+                    <p>
+                        <label for="preço">Qual o valor que espera gastar por pessoa e por dia na sua viagem?</label>
+                        <input type="number" name="preço" min="10" placeholder="€">
+                    </p>
+
+                </fieldset>
+
+
+                <p><input type="submit"></p>
             </form>
         </section>
     </main>
     <footer>
-    <p>DIW 2024</p>
+        <p>DIW 2024</p>
     </footer>
 
-    </body>
+</body>
+
 </html>
