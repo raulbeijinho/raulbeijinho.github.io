@@ -96,7 +96,7 @@ body {
         height: 100vh;
         
         grid-template-columns: 1fr;
-        grid-template-rows: 9vw 7vw 1fr 7vw 7vw;
+        grid-template-rows: auto auto 1fr auto auto;
         
         grid-template-areas:
         'header-area'
