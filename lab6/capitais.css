@@ -185,6 +185,50 @@ article#banner {
 
 }
 
+article#galeriafotos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 960px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    img{
+        object-fit: cover;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        transition: width 1s, height 2s, transform 0.3s ease;
+    }
+
+    img:hover {
+        transform: scale(1.05);
+        transform: scaleX(-1);
+        border-color: #333;
+        
+      }
+
+      img.melhorlocalfoto:hover {
+        transform: rotate(20deg);
+        border-color: #333;
+      }
+
+      img.nando:hover{
+        transform: none;
+        width: 300px;
+        height: 300px;
+      }
+
+      img.santinha:hover{
+        transform: translate(50px,100px);
+      }
+}
+
 
 
 
