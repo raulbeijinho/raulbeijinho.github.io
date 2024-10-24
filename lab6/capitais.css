@@ -152,6 +152,39 @@ article#cidades div{
     
 }
 
+body { 
+        margin:0; 
+        padding:0;
+      }
+article#banner {
+    
+    div {
+           margin: 30px;
+           background-color: white;
+           width: auto;
+           height: auto;
+      }
+      
+      div.parallax {
+      
+           margin: 0px;
+      }
+      
+      .parallax {
+        background-image: url("images/imagem\ banner.jpg");
+        min-height: 200px; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      
+      b {
+        color: dodgerblue;
+      }
+
+}
+
 
 
 

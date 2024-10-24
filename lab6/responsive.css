@@ -43,52 +43,54 @@ nav {
 
     }
 }
-#quizzsim{
-    padding:15px;
-    text-align:left;
-    margin-bottom: auto;
-    margin-top: auto;
-}
 
-#quizzum{
-    padding:15px;
-    text-align: left;
-    
-}
-
-#viagemform{
-    padding:15px;
-    text-align: left;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-form{
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-fieldset{
-    padding:15px;
-}
-
-#location{
+#quizzsim {
+    padding: 15px;
     text-align: left;
     margin-bottom: auto;
     margin-top: auto;
-    padding:25px;
 }
 
-#curiosity{
+#quizzum {
+    padding: 15px;
+    text-align: left;
+
+}
+
+#viagemform {
+    padding: 15px;
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+form {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+fieldset {
+    padding: 15px;
+}
+
+#location {
+    text-align: left;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: 25px;
+}
+
+#curiosity {
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
-    padding:25px;
+    padding: 25px;
 }
 
-#homeindex{
-    padding:25px;
+#homeindex {
+    padding: 25px;
 }
+
 main {
     display: grid;
     grid-area: main-area;
@@ -99,7 +101,7 @@ main {
 }
 
 aside {
-    display:block;
+    display: block;
     grid-area: aside-area;
     text-align: center;
     background-color: white;
@@ -120,11 +122,11 @@ footer {
     text-align: center;
     background-color: #1db954;
     color: white;
-    
+
 }
 
-div{
-    padding:25px;
+div {
+    padding: 25px;
 }
 
 body {
@@ -146,16 +148,16 @@ body {
         display: grid;
         width: 100vw;
         height: 100vh;
-        
+
         grid-template-columns: 1fr;
         grid-template-rows: auto auto 1fr auto auto;
-        
+
         grid-template-areas:
-        'header-area'
-        'nav-area'
-        'main-area'
-        'aside-area'
-        'footer-area';
+            'header-area'
+            'nav-area'
+            'main-area'
+            'aside-area'
+            'footer-area';
     }
 
     nav {
@@ -163,51 +165,46 @@ body {
         grid-area: nav-area;
 
     }
-    
+
 }
 
 @media only screen and (min-width: 480px) and (orientation: landscape) {
-    
-    @media only screen and (min-width: 480px) and (orientation: landscape) {
 
-        body {
-            display: grid;
-            width: 100vw;
-            height: 100vh;
-            
-            
-            grid-template-columns: 1fr; 
-            grid-template-rows: auto auto 1fr auto auto;
-            
-            
-            grid-template-areas:
+    body {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto auto;
+
+
+        grid-template-areas:
             "header-area"
             "nav-area"
             "main-area"
             "aside-area"
             "footer-area";
-        }
-    
-        header {
-            grid-area: header-area;
-        }
-    
-        nav {
-            grid-area: nav-area;
-        }
-    
-        main {
-            grid-area: main-area;
-        }
-    
-        aside {
-            grid-area: aside-area;
-        }
-    
-        footer {
-            grid-area: footer-area;
-        }
     }
 
+    header {
+        grid-area: header-area;
+    }
 
+    nav {
+        grid-area: nav-area;
+    }
+
+    main {
+        grid-area: main-area;
+    }
+
+    aside {
+        grid-area: aside-area;
+    }
+
+    footer {
+        grid-area: footer-area;
+    }
 }
