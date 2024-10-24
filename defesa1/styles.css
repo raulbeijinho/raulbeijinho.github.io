@@ -101,13 +101,6 @@ body {
             'aside-area'
             'nav-area'
             'footer-area';
-
     }
-
-    nav{
-        display:grid;
-        grid-template-rows: 25% 25% 25% 25%;
-    }
-
 }
 
