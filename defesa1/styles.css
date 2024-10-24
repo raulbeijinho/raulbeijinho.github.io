@@ -1,0 +1,113 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing:border-box;
+
+}
+
+header {
+    grid-area: header-area;
+    text-align: center;
+    background-color: lightgrey;
+    color: black;
+}
+
+nav {
+    display:grid;
+    grid-area: nav-area;
+    text-align: center;
+    background-color: white;
+    color: #383838;
+    padding: 35px;
+    text-align: left;
+    font-size: large;
+    
+    a:link {
+        color: white;
+        background-color:grey;
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    a:link.impar{
+        background-color: lightgray;
+    }
+
+    a:visited {
+        color:white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+}
+
+main {
+    display: grid;
+    grid-area: main-area;
+    text-align: left;
+    background-color: white;
+    color: #383838;
+    padding: 35px;
+    font-size: large;
+}
+
+footer {
+    grid-area: footer-area;
+    text-align: center;
+    background-color: lightgrey;
+    color: black;
+    
+}
+
+aside{
+    grid-area: aside-area;
+    background-color: white;
+    padding:20px;
+    font-size: large;
+}
+
+body {
+    display: grid;
+    background-color:rgb(236, 236, 236);
+    width: 100vw;
+    height: 100vh;
+   
+    grid-template-areas:
+        'header-area header-area header-area'
+        'main-area main-area main-area'
+        'aside-area nav-area nav-area'
+        'footer-area footer-area footer-area';
+    grid-gap: 10px;
+}
+
+@media(max-width:600px) {
+
+    body {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto auto;
+
+        grid-template-areas:
+            'header-area'
+            'main-area'
+            'aside-area'
+            'nav-area'
+            'footer-area';
+
+    }
+
+    nav{
+        display:grid;
+        grid-template-rows: 25% 25% 25% 25%;
+    }
+
+}
+
