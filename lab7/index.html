@@ -1,27 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Example</title>
 </head>
+
 <body>
-    
-    
+    <nav>
+        <li><a href="index.html">Index</a>
+        <li><a href="eventos.html">Eventos</a>    
+    </nav>
+
     <p id="texto">1. Passa por aqui!</p>
-    <p id="textocor">2. Pinta-me! <button id="red">Red</button><button id="green">Green</button><button id="blue">Blue</button></p> 
+    <p id="textocor">2. Pinta-me! <button id="red">Red</button><button id="green">Green</button><button
+            id="blue">Blue</button></p>
     <p id="escrever">3. Experimenta escrever...
-    <input type="text" id="caixaTexto" name="escrever">
+        <input type="text" id="caixaTexto" name="escrever">
     </p>
     <p>4. Escolha uma cor em inglês: <input type="text" id="caixaCorIngles" placeholder>
         <button id="submitButton">submeter</button>
     </p>
     <span>5.</span>
-    <button id="countButton">Conta!</button> 
+    <button id="countButton">Conta!</button>
     <span id="contador">0</span>
-    
-    
-    
-    <script src="main.js"></script>
+
+    <script>
+
+        let counter = 0;
+        function count() {
+            document.querySelector('#contador').innerHTML = ++counter;
+        }
+        document.querySelector('#countButton').onclick = count;
+
+        function mudarTextoMouseOver() {
+            const texto = document.querySelector("#texto");
+            texto.textContent = "1. Obrigado por passares!";
+        }
+
+        function restaurarTextoMouseOut() {
+            const texto = document.querySelector("#texto");
+            texto.textContent = "1. Passa por aqui!";
+        }
+
+        const texto = document.querySelector("#texto");
+
+        texto.addEventListener("mouseover", mudarTextoMouseOver);
+        texto.addEventListener("mouseout", restaurarTextoMouseOut);
+
+        function mudarCorTexto(cor) {
+            const textocor = document.querySelector("#textocor");
+            textocor.style.color = cor;
+        }
+
+        const redButton = document.querySelector("#red");
+        const greenButton = document.querySelector("#green");
+        const blueButton = document.querySelector("#blue");
+
+        redButton.addEventListener("click", () => mudarCorTexto("red"));
+        greenButton.addEventListener("click", () => mudarCorTexto("green"));
+        blueButton.addEventListener("click", () => mudarCorTexto("blue"));
+
+        function gerarCorAleatoria() {
+            return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+        }
+
+        function alterarCorDeFundo() {
+            const escrever = document.querySelector("#caixaTexto");
+            escrever.style.backgroundColor = gerarCorAleatoria;
+        }
+
+        document.querySelector("#caixaTexto").addEventListener("input", alterarCorDeFundo);
+
+        function alterarCorDeFundo() {
+            const caixaTexto = document.querySelector("#caixaCorIngles");
+            const cor = caixaTexto.value.trim();
+            document.body.style.backgroundColor = cor;
+        }
+
+        document.querySelector("#submitButton").addEventListener("click", alterarCorDeFundo);
+
+    </script>
+
 </body>
+
 </html>

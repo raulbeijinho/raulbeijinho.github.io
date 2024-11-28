@@ -1,51 +1,49 @@
-let counter = 0;
-function count() {
-    document.querySelector('#contador').innerHTML = ++counter;
+function alteraCorPato() {
+    const body = document.body;
+    const currentColor = body.style.backgroundColor;
+    if (currentColor === 'yellow') {
+        body.style.backgroundColor = '#f9f9f9'; // Cor original
+    } else {
+        body.style.backgroundColor = 'yellow'; // Cor amarela
+    }
 }
-    document.querySelector('#countButton').onclick = count;
 
-    function mudarTextoMouseOver() {
-        const texto = document.querySelector("#texto");
-        texto.textContent = "1. Obrigado por passares!";
-    }
-    
-    function restaurarTextoMouseOut() {
-        const texto = document.querySelector("#texto");
-        texto.textContent = "1. Passa por aqui!";
-    }
-    
-    function mudarCorTexto(cor) {
-        const textocor = document.querySelector("#textocor");
-        textocor.style.color = cor;
-    }
-    
-    const texto = document.querySelector("#texto");
-    const redButton = document.querySelector("#red");
-    const greenButton = document.querySelector("#green");
-    const blueButton = document.querySelector("#blue");
-    
-    texto.addEventListener("mouseover", mudarTextoMouseOver);
-    texto.addEventListener("mouseout", restaurarTextoMouseOut);
-    
-    redButton.addEventListener("click", () => mudarCorTexto("red"));
-    greenButton.addEventListener("click", () => mudarCorTexto("green"));
-    blueButton.addEventListener("click", () => mudarCorTexto("blue"));
-    
-    function gerarCorAleatoria() {
-        return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-    }
-    
-    function alterarCorDeFundo() {
-        const escrever = document.querySelector("#caixaTexto");
-        escrever.style.backgroundColor = gerarCorAleatoria();
-    }
-    
-    document.querySelector("#caixaTexto").addEventListener("input", alterarCorDeFundo);
+const patoText = document.querySelector('#pato');
+patoText.addEventListener('click', alteraCorPato);
 
-    function alterarCorDeFundo() {
-        const caixaTexto = document.querySelector("#caixaCorIngles");
-        const cor = caixaTexto.value.trim(); 
-        document.body.style.backgroundColor = cor; 
-    }
+function mudarTextoMouseOverPato() {
+    const patoQuack = document.querySelector('#pato2');
+    patoQuack.textContent = "QUACK!";
+}
 
-    document.querySelector("#submitButton").addEventListener("click", alterarCorDeFundo);
+function restaurarTextoMouseOutPato() {
+    const patoQuack = document.querySelector('#pato2');
+    patoQuack.textContent = "Pato";
+}
+
+const patoQuack = document.querySelector('#pato2')
+patoQuack.addEventListener('mouseover', mudarTextoMouseOverPato)
+patoQuack.addEventListener('mouseout', restaurarTextoMouseOutPato)
+
+function transformToArroz() {
+
+    const allTextElements = document.querySelectorAll('p, h1, h2, span, li');
+
+    allTextElements.forEach(function (element) {
+        element.textContent = 'arroz';
+    });
+}
+
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'p' || event.key === 'P') { // 
+        transformToArroz(); //
+    } 
+});
+
+
+
+
+
+
+
+
