@@ -25,21 +25,34 @@ const patoQuack = document.querySelector('#pato2')
 patoQuack.addEventListener('mouseover', mudarTextoMouseOverPato)
 patoQuack.addEventListener('mouseout', restaurarTextoMouseOutPato)
 
-function transformToArroz() {
+let isTransformed = false;
 
-    const allTextElements = document.querySelectorAll('p, h1, h2, span, li');
+function toggleText() {
+    const allTextElements = document.querySelectorAll('p, h1, h2, span, li'); 
 
-    allTextElements.forEach(function (element) {
-        element.textContent = 'arroz';
-    });
+    
+    if (isTransformed) {
+        allTextElements.forEach(function(element) {
+            element.textContent = element.getAttribute('data-original') || element.textContent;
+        });
+    } else {
+        
+        allTextElements.forEach(function(element) {
+            if (!element.hasAttribute('data-original')) {
+                element.setAttribute('data-original', element.textContent); 
+            }
+            element.textContent = 'QUACK!!!'; 
+        });
+    }
+
+    isTransformed = !isTransformed;
 }
 
-document.addEventListener('keydown', function (event) {
-    if (event.key === 'p' || event.key === 'P') { // 
-        transformToArroz(); //
-    } 
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'p' || event.key === 'P') {
+        toggleText(); 
+    }
 });
-
 
 
 
