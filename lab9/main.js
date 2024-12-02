@@ -1,11 +1,7 @@
 function carregarProdutos(produtos) {
   
   const produtosSection = document.querySelector('#produtos');
-  if (!produtosSection) {
-    console.error("Elemento '#produtos' não encontrado no DOM.");
-    return;
-  }
-
+  
   produtosSection.innerHTML = '';
 
   produtos.forEach(produto => {
