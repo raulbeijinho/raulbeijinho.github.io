@@ -6,7 +6,7 @@
 }
 
 header {
-    position: sticky;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,7 +16,7 @@ header {
 header nav {
 
     display: flex;
-    justify-contents: flex-end;
+    justify-content: flex-end;
 
     a {
 
@@ -52,10 +52,6 @@ html {
     background-color: #f9f9f9;
 }
 
-main {}
-
-
-
 main h2 {
     font-size: 18px;
     margin: 10px 0;
@@ -69,16 +65,13 @@ main h4 {
     padding: 5px;
     text-align: center;
     background-color: #8b0000;
+    color: white;
 }
 
 section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-}
-
-section #cart {
-    background-color: #8b0000;
 }
 
 article {

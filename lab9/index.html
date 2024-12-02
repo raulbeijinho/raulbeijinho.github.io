@@ -12,19 +12,19 @@
     <header>
         <h1>Loja</h1>
         <nav>
-            <a href="#poema">Produtos</a>
-            <a href="#paisagem">Cesto</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#cart">Cesto</a>
         </nav>
     </header>
     <main>
         <h2>Selecione os seus produtos</h2>
-        <section>
+        <section id="produtos">
             <article>
                 <img src="https://via.placeholder.com/200" alt="Produto 1">
                 <h3>Produto 1</h3>
                 <p class="price">Custo total: 695 €</p>
                 <p>Descrição breve do produto.</p>
-                <button>+ Adicionar ao Cesto</button>
+                <button class="add-to-cart">+ Adicionar ao Cesto</button>
             </article>
 
 
@@ -33,7 +33,7 @@
                 <h3>Produto 2</h3>
                 <p class="price">Custo total: 168 €</p>
                 <p>Descrição breve do produto.</p>
-                <button>+ Adicionar ao Cesto</button>
+                <button class="add-to-cart">+ Adicionar ao Cesto</button>
             </article>
 
 
@@ -42,7 +42,7 @@
                 <h3>Produto 3</h3>
                 <p class="price">Custo total: 9.99 €</p>
                 <p>Descrição breve do produto.</p>
-                <button>+ Adicionar ao Cesto</button>
+                <button class="add-to-cart">+ Adicionar ao Cesto</button>
             </article>
 
 
@@ -51,7 +51,7 @@
                 <h3>Produto 4</h3>
                 <p class="price">Custo total: 64 €</p>
                 <p>Descrição breve do produto.</p>
-                <button>+ Adicionar ao Cesto</button>
+                <button class="add-to-cart">+ Adicionar ao Cesto</button>
             </article>
 
             <article>
@@ -59,7 +59,7 @@
                 <h3>Produto 5</h3>
                 <p class="price">Custo total: 64 €</p>
                 <p>Descrição breve do produto.</p>
-                <button>+ Adicionar ao Cesto</button>
+                <button class="add-to-cart">+ Adicionar ao Cesto</button>
             </article>
 
             <article>
@@ -67,7 +67,7 @@
                 <h3>Produto 6</h3>
                 <p class="price">Custo total: 64 €</p>
                 <p>Descrição breve do produto.</p>
-                <button>+ Adicionar ao Cesto</button>
+                <button class="add-to-cart">+ Adicionar ao Cesto</button>
             </article>
 
             <article>
@@ -75,7 +75,7 @@
                 <h3>Produto 7</h3>
                 <p class="price">Custo total: 64 €</p>
                 <p>Descrição breve do produto.</p>
-                <button>+ Adicionar ao Cesto</button>
+                <button class="add-to-cart">+ Adicionar ao Cesto</button>
             </article>
 
             <article>
@@ -83,7 +83,7 @@
                 <h3>Produto 8</h3>
                 <p class="price">Custo total: 64 €</p>
                 <p>Descrição breve do produto.</p>
-                <button>+ Adicionar ao Cesto</button>
+                <button class="add-to-cart">+ Adicionar ao Cesto</button>
             </article>
 
             <article>
@@ -91,20 +91,20 @@
                 <h3>Produto 9</h3>
                 <p class="price">Custo total: 64 €</p>
                 <p>Descrição breve do produto.</p>
-                <button>+ Adicionar ao Cesto</button>
+                <button class="add-to-cart">+ Adicionar ao Cesto</button>
             </article>
         </section>
         <h4>Produtos Selecionados</h4>
         <section id="cart">
         
         </section>
-        <h4>Custo total: </h4>
+        <h4 id="custototal">Custo total: </h4>
         
     </main>
     <footer class="footer">
         <p>2024</p>
     </footer>
-
+    <script src="main.js"></script>
     <script src="produtos.js"></script>
 </body>
 
