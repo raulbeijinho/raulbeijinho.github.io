@@ -10,7 +10,7 @@
 <body>
     <nav>
         <li><a href="index.html">Index</a>
-        <li><a href="eventos.html">Eventos</a>    
+        <li><a href="eventos.html">Eventos</a>
     </nav>
 
     <p id="texto">1. Passa por aqui!</p>
@@ -58,9 +58,17 @@
         const greenButton = document.querySelector("#green");
         const blueButton = document.querySelector("#blue");
 
-        redButton.addEventListener("click", () => mudarCorTexto("red"));
-        greenButton.addEventListener("click", () => mudarCorTexto("green"));
-        blueButton.addEventListener("click", () => mudarCorTexto("blue"));
+        redButton.addEventListener("click", function () {
+            mudarCorTexto("red");
+        });
+
+        greenButton.addEventListener("click", function () {
+            mudarCorTexto("green");
+        });
+
+        blueButton.addEventListener("click", function () {
+            mudarCorTexto("blue");
+        });
 
         function gerarCorAleatoria() {
             return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
