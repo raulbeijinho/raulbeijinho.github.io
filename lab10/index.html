@@ -15,14 +15,22 @@
             <a href="#produtos">Produtos</a>
             <a href="#cart">Cesto</a>
         </nav>
+
     </header>
+    <h2>Selecione os seus produtos</h2>
     <main>
-        <h2>Selecione os seus produtos</h2>
-        
-        <select id="categorias">
-            <option value="">Todas as Categorias</option>
-        </select>
-        
+        <section id="selects">
+            <b>Filtrar</b> <select id="categorias">
+                <option value="">Todas as Categorias</option>
+            </select>
+            <b>Ordenar</b> <select id="ordenar">
+                <option value="">Ordenar pelo Preço</option>
+                <option value="crescente">Preço Crescente</option>
+                <option value="decrescente">Preço Decrescente</option>
+            </select>
+            <b>Procurar</b>
+            <input type="text" id="procurar" placeholder="Procure pelo produto" />
+        </section>
         <section id="produtos">
             <article>
                 <img src="https://via.placeholder.com/200" alt="Produto 2">
@@ -32,7 +40,6 @@
                 <button class="add-to-cart"></button>
             </article>
 
-
             <article>
                 <img src="https://via.placeholder.com/200" alt="Produto 3">
                 <h3>Produto 2</h3>
@@ -40,7 +47,6 @@
                 <p></p>
                 <button class="add-to-cart"></button>
             </article>
-
 
             <article>
                 <img src="https://via.placeholder.com/200" alt="Produto 4">
@@ -186,12 +192,20 @@
                 <button class="add-to-cart"></button>
             </article>
         </section>
+
         <h4>Produtos Selecionados</h4>
         <section id="cart">
 
         </section>
-        <h4 id="custototal">Custo total: </h4>
+        <section id="checkout">
 
+            <p id="custototal">Custo total: </p>
+            <p>És estudante DEISI? <input type="checkbox" id="estudanteDeisi" name="deisi" value="estudante"></p>
+            <p>Cupão de desconto <input type="text" id="desconto" placeholder="" /></p>
+            <button class="comprar">Comprar</button>
+            
+
+        </section>
     </main>
     <footer class="footer">
         <p>2024</p>
