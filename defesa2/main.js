@@ -169,7 +169,7 @@ function criaProdutoCesto(produto) {
   removeButton.addEventListener('click', function () {
     let produtosSelecionados = JSON.parse(localStorage.getItem('produtos-selecionados')) || [];
 
-    produtosSelecionados = produtosSelecionados.filter(p => p.title !== produto.title);
+    produtosSelecionados = produtosSelecionados(p => p.title !== produto.title);
 
     localStorage.setItem('produtos-selecionados', JSON.stringify(produtosSelecionados));
 
@@ -227,6 +227,7 @@ document.querySelector('#procurar').addEventListener('input', function (event) {
   const termoPesquisa = event.target.value.toLowerCase();
   pesquisarProdutos(termoPesquisa);
 });
+
 
 function finalizarCompra() {
   const produtosSelecionados = JSON.parse(localStorage.getItem('produtos-selecionados')) || [];
@@ -288,6 +289,12 @@ function finalizarCompra() {
 }
 
 document.querySelector('.comprar').addEventListener('click', finalizarCompra);
+
+function esconderInfo() {
+  
+}
+
+document.querySelector('.hide-info').addEventListener('click', esconderInfo);
 
 
 document.addEventListener('DOMContentLoaded', function () {
