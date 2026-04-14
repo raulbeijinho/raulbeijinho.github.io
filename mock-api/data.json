@@ -1,4 +1,64 @@
 {
-  "message": "Mock API OK",
-  "question": "Qual é o nível de risco?"
+  "clients": [
+    {
+      "id": "client-1",
+      "name": "Global Bank Inc.",
+      "geoarea": "North America"
+    },
+    {
+      "id": "client-2",
+      "name": "Euro Retail Solutions",
+      "geoarea": "Europe"
+    }
+  ],
+  "applications": [
+    {
+      "id": "app-1",
+      "name": "Mobile Banking App",
+      "clientId": "client-1",
+      "industry": "Finance",
+      "criticality": "gold"
+    },
+    {
+      "id": "app-2",
+      "name": "E-Commerce Checkout",
+      "clientId": "client-2",
+      "industry": "Retail",
+      "criticality": "silver"
+    }
+  ],
+  "assessments": [
+    {
+      "id": "assessment-1",
+      "appId": "app-1",
+      "date": "2026-04-15T12:00:00.000Z",
+      "results": {
+        "continuity": {
+          "runId": "run-cont-1",
+          "score0to100": 85,
+          "breakdown": [],
+          "constraints": []
+        },
+        "risk": {
+          "runId": "run-risk-1",
+          "risk0to100": 15,
+          "drivers": [],
+          "guardrails": [
+            { "code": "R-10", "msg": "Database without multi-region replication" }
+          ],
+          "mitigations": [
+            { "code": "M-10", "action": "Implement active-active database cluster" }
+          ]
+        },
+        "sizing": {
+          "runId": "run-size-1",
+          "method": "t-shirt",
+          "fte": { "p10": 1, "p50": 2, "p90": 3 },
+          "bands": [],
+          "assumptions": []
+        },
+        "recommendations": { "items": [] }
+      }
+    }
+  ]
 }
