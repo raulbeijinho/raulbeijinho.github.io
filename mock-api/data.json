@@ -25,6 +25,13 @@
       "clientId": "client-2",
       "industry": "Retail",
       "criticality": "silver"
+    },
+        {
+      "id": "app-3",
+      "name": "New Application",
+      "clientId": "client-1",
+      "industry": "Healthcare",
+      "criticality": "Bronze"
     }
   ],
   "assessments": [
